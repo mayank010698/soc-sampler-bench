@@ -1,0 +1,11 @@
+{
+  "method": "fam",
+  "target": "gmm",
+  "dim": 2,
+  "nfe": 5,
+  "train_steps": 3,
+  "seed": 0,
+  "train_wallclock_s": 3.0841259956359863,
+  "sinkhorn": 0.06463573127985,
+  "mode_discrepancy": 0.40147167444229126
+}

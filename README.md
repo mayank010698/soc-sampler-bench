@@ -31,5 +31,12 @@ Each run writes one `results/<method>__<target><dim>d__seed<seed>.json`. Nothing
 
 - [x] Harness (targets, metrics, adapter contract, registry, leaderboard) proven end-to-end.
 - [x] `trust_region_soc` adapter (gmm / gmm40 targets).
+- [x] `fam` adapter (gmm / gmm40 targets) — verified end-to-end on CPU (`conda env: uai2`),
+      training loop and metrics both confirmed working against the shared target.
+- [x] `pdns` adapter (gmm / gmm40 targets) — `HarnessEnergy` shim and Hydra config
+      composition verified against the real vendored config tree; full training not yet
+      run end-to-end locally since `continuous/train.py` hardcodes `device="cuda"` and
+      this machine has no GPU. Needs a CUDA box plus PDNS's own extra deps
+      (`torchmetrics`, `mace-torch`, `ipdb`, `termcolor`) on top of `requirements.txt`.
 - [ ] Additional targets (Funnel, ManyWell, DW4, LJ13/55 — vendor from PDNS).
-- [ ] Additional method adapters (PDNS, Adjoint Sampling, Fisher Adjoint Matching, ...).
+- [ ] Additional method adapters (Adjoint Sampling, ...).

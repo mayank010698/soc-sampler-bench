@@ -1,0 +1,13 @@
+{
+  "method": "trust_region_soc",
+  "target": "gmm",
+  "dim": 2,
+  "nfe": 5,
+  "train_steps": 3,
+  "seed": 0,
+  "train_wallclock_s": 77.63481497764587,
+  "sinkhorn": 0.0823463648557663,
+  "mode_discrepancy": 0.40647169947624207,
+  "ess": 0.06788177788257599,
+  "log_Z_estimate": 0.053644657135009766
+}

@@ -1,0 +1,11 @@
+{
+  "method": "pdns",
+  "target": "gmm",
+  "dim": 2,
+  "nfe": 5,
+  "train_steps": 3,
+  "seed": 0,
+  "train_wallclock_s": 90.61227822303772,
+  "sinkhorn": 0.17840948700904846,
+  "mode_discrepancy": 0.5851266980171204
+}

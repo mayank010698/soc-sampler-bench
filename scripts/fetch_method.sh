@@ -11,9 +11,19 @@ case "${1:-}" in
     COMMIT="a93471f8698ab4754edc810184390769828ad4fa"
     DIRNAME="TrustRegionSOC"
     ;;
+  pdns)
+    URL="https://github.com/AlexandreGUO2001/PDNS"
+    COMMIT="2abd5569fc29c4c47416f78f067948f1474b58c2"
+    DIRNAME="PDNS"
+    ;;
+  fam)
+    URL="https://github.com/mayank010698/soc_uai"
+    COMMIT="0153ff5f790656186cf1c7237f76c13053b01db4"
+    DIRNAME="FAM"
+    ;;
   "")
     echo "usage: scripts/fetch_method.sh <method_name>" >&2
-    echo "known methods: trust_region_soc" >&2
+    echo "known methods: trust_region_soc, pdns, fam" >&2
     exit 1
     ;;
   *)
